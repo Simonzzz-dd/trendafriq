@@ -1,0 +1,89 @@
+@import "../root";
+
+.contactUs {
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 5rem;
+  border-top: solid #44546c30 1px;
+}
+.contactTheme {
+  height: 19rem;
+  width: 100%;
+  top: 0;
+  background-position: top;
+  background-size: contain;
+  position: absolute;
+  background-image: url("https://images.unsplash.com/photo-1499159058454-75067059248a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80");
+}
+
+.contactContainer {
+  position: relative;
+  margin-top: 0rem;
+  padding-top: 6rem;
+  //   background-color: black;
+  min-height: 100vh;
+}
+
+.contactContainer .R-- {
+  //   margin: 0.5rem;
+  box-shadow: 2px 2px 10px #dddddd;
+  //   border: solid #637b9f6b 1px;
+  min-height: 19rem;
+  background-color: #ffffff;
+  //   padding: 1rem;
+}
+
+@media (max-width: 600px) {
+  .contactContainer .R-- {
+    box-shadow: none;
+  }
+}
+
+.cl {
+  //   border: solid 1px #637b9f6b;
+  padding: 0.5rem;
+}
+
+.contactDiv {
+  //   border: solid #637b9f6b 1px;
+  min-height: 100%;
+  padding: 0.5rem;
+}
+
+.data-- {
+  //   max-height: 8rem;
+  min-height: 8rem;
+  border: 1px solid #dddddd;
+  width: 100%;
+  margin: 0.5rem 0;
+  border-radius: 5px;
+  padding: 0.5rem;
+  background-color: #f7f7f7;
+}
+
+.maps {
+  max-height: 10rem;
+  min-height: 18rem;
+  //   border: 1px solid #dddddd;
+  width: 100%;
+  margin: 0.5rem 0;
+  border-radius: 5px;
+}
+
+.MailUS {
+  margin: 0.5rem 0;
+  min-height: 18rem;
+  color: $custom3;
+  width: 100%;
+  //   border: 1px solid #dddddd;
+  padding: 0.5rem;
+}
+
+.btn-primary {
+  background-color: #efefef;
+  outline: none;
+  padding: 1re 2rem;
+  border: none;
+  color: $custom3;
+  border-radius: 0;
+}

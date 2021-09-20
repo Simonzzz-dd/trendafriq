@@ -1,0 +1,102 @@
+@import "./root";
+
+.section-3 {
+  position: fixed;
+  width: 100vw;
+  color: rgb(255, 255, 255);
+
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  height: 100vh;
+
+  left: 0;
+}
+
+.section-3 h1 {
+  width: 100%;
+}
+
+.section4 .align-Center-,
+.section5 .align-Center- {
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  height: 100vh;
+  width: 100vw;
+}
+
+.section4 .card,
+.section5 .card {
+  // background-image: linear-gradient(#f7f7f7, white);
+  height: 100%;
+  max-height: 23rem;
+  min-height: 23rem;
+  border-radius: 0;
+  max-width: 90%;
+  width: 38rem;
+  min-width: 300px;
+  color: black;
+  margin-top: 4rem;
+  border: 0;
+}
+.s4Center {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 1200px) {
+  .s4Center {
+    justify-content: center;
+  }
+  .section4 .container-4,
+  .section5 .container-4 {
+    display: none;
+  }
+
+  .section4 .card,
+  .section5 .card {
+    width: 100%;
+    min-width: 90%;
+  }
+}
+.section4 .p-3,
+.section5 .p-3 {
+  display: none;
+}
+
+.section4 .card img,
+.section5 img {
+  border-radius: 0;
+  min-height: 16.9rem;
+  max-height: 16.9rem;
+  background-color: $custom3;
+  object-fit: cover;
+  border: 3px solid $custom;
+  box-shadow: 1px 1px 10px #dddddd;
+}
+
+.section4 h5,
+.section5 h5 {
+  color: $custom3;
+
+  margin-bottom: 1rem;
+}
+.section4 h2,
+.section5 h2 {
+  -webkit-text-stroke: 2px $custom3;
+
+  opacity: 0.7;
+  font-size: 2.8rem;
+  max-width: 17rem;
+  max-height: 12rem;
+  color: $custom3;
+
+  // border: double 4px #dddddd;
+  padding: 1rem;
+  // font-family: "Cormorant", serif;
+}
