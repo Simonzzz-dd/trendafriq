@@ -57,7 +57,7 @@ element.style {
   animation-duration: 0.5s;
   background-color: $custom3;
   margin-top: 1px;
-  // border-top: 4px double $custom3;
+  // border-top: 1px solid #dddddd;
   position: relative;
   // border-bottom: 1px solid $custom;
 }
@@ -86,7 +86,7 @@ element.style {
 // Home Page --------------------- Logo
 
 .homePage-- {
-  background-image: linear-gradient(#f4f4f485, #eaeaea5a, #7e7e7ec8);
+  background-image: linear-gradient(#3a3a3a85, #7e7e7e5a, #1c1c1cc8);
   position: absolute;
   width: 110%;
   min-width: 100vw;
@@ -177,9 +177,8 @@ element.style {
 }
 
 .OurBrand h5 {
-  border-bottom: 0px solid $custom3;
-  padding: 0 1rem;
-  color: $custom3;
+  padding: 0.5rem 1rem;
+  color: $custom;
   font-size: 1rem;
   letter-spacing: 0;
 }
@@ -204,7 +203,7 @@ element.style {
 
   .since {
     transform: translateX(13px);
-    display: flex;
+    display: none;
     opacity: 100%;
     border: double 4px $custom3;
   }

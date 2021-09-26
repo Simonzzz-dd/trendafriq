@@ -67,9 +67,9 @@ const Section1 = () => {
                                 <p>Shape the future, understand design concepts, commit to achieving the goals of our clients, creating unprecedent value and oppurtunity for our employees, save the ecosystem .
                                 </p>
                             </Col>
-                            <Col md className="BD">
-                                <h5>OUR VISION</h5>
-                                <p>
+                            <Col md style={{backgroundColor: "#1e242dd2",}} className="BD">
+                                <h5 style={{ color: "white"}}>OUR VISION</h5>
+                                <p style={{ color: "white"}}> 
                                     At Trend Afriq , our vision is to be the country’s best company in the eyes of our customers, shareholders, communities and people. Deliver the best we can by
                                     always keeping Trend Afriq’s values
                                     top of mind.
