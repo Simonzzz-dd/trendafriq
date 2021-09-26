@@ -53,11 +53,13 @@ element.style {
 }
 
 .intro- {
+  animation-name: example;
+  animation-duration: 0.5s;
   background-color: $custom3;
   margin-top: 1px;
   // border-top: 4px double $custom3;
   position: relative;
-  border-bottom: 1px solid $custom;
+  // border-bottom: 1px solid $custom;
 }
 
 .intro- .carousel {
@@ -84,7 +86,7 @@ element.style {
 // Home Page --------------------- Logo
 
 .homePage-- {
-  background-image: linear-gradient(#85858585, #0000005a, #44546cc8);
+  background-image: linear-gradient(#f4f4f485, #eaeaea5a, #7e7e7ec8);
   position: absolute;
   width: 110%;
   min-width: 100vw;
@@ -104,7 +106,7 @@ element.style {
   border-radius: 100%;
   height: 4rem;
   width: 4rem;
-  opacity: 0.8;
+  opacity: 0.5;
 }
 .homePageImg {
   height: 4rem;
@@ -175,9 +177,11 @@ element.style {
 }
 
 .OurBrand h5 {
-  border-bottom: 2px solid #5a687e31;
-
+  border-bottom: 0px solid $custom3;
+  padding: 0 1rem;
   color: $custom3;
+  font-size: 1rem;
+  letter-spacing: 0;
 }
 
 @media (min-width: 768px) {

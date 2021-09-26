@@ -39,11 +39,11 @@
   width: 38rem;
   min-width: 300px;
   color: black;
-  margin-top: 4rem;
+
   border: 0;
 }
 .s4Center {
-  padding-top: 2rem;
+  padding-top: 2.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -76,7 +76,7 @@
   max-height: 16.9rem;
   background-color: $custom3;
   object-fit: cover;
-  border: 3px solid $custom;
+  border: 3px solid $custom3;
   box-shadow: 1px 1px 10px #dddddd;
 }
 

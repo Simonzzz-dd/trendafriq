@@ -8,7 +8,8 @@ const Footer = () => {
             <Row>
                 <Col md>
                     CONTACT US: <br/>
-                    +258 21750315
+                    fax: +258 21750315 <br/>
+                    Email: info@trend-afriq.co.mz
                 </Col>
                 <Col md={6}>
                     LOCATION: <br />

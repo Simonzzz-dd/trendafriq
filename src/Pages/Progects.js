@@ -1,6 +1,8 @@
 import "../styles/progects/progects.scss"
 import { Container,Row, Col, Card } from "react-bootstrap";
 
+
+
 const Progects = () => {
     const Images = [
         { image: "/Backs/track.jpg"},
@@ -11,17 +13,19 @@ const Progects = () => {
             { image: "/Backs/image-406.jpg"},
     ]
 
+
+
     return ( 
     <> 
         <div className="progects">
         <Container>
-            <p>Progects Gallery</p>
+            <p style={{color: "#dddddd"}}>Progects Gallery</p>
             <Row xs={1} md={2} lg={3}>
             {
                 Images.map((ele, i) => {
                     return (
                         <Col key={ele.image}> 
-                        <div class="relative">
+                        <div className="relative">
                             <Card>
                                 <Card.Img variant="top" src={ele.image}/>
                                 <Card.Body>

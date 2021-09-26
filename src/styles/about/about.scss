@@ -1,0 +1,37 @@
+@import "../root";
+
+.about1 {
+  border-top: 1px solid #dddddd;
+  min-height: 100vh;
+  padding-top: 1rem;
+  animation-name: example;
+  animation-duration: 1.5s;
+  padding-bottom: 5rem;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+.about1 .aboutImage {
+  max-height: 10rem;
+}
+
+.aboutImage img {
+  object-fit: cover;
+  object-position: center;
+  max-height: 10rem;
+  padding-bottom: 1rem;
+  opacity: 0.4;
+}
+
+.about1 h5 {
+  color: $custom3;
+  letter-spacing: 0px;
+  font-size: 1rem;
+}
+
+.about1 p {
+  text-align: justify;
+}
