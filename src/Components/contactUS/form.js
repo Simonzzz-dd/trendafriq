@@ -1,4 +1,4 @@
-import { Form, Row, Button, Col, InputGroup } from "react-bootstrap";
+import { Form, Button, Col, InputGroup } from "react-bootstrap";
 import { useState } from "react"
 
 
@@ -42,11 +42,9 @@ const Form_ = () => {
     } 
     return ( 
             <Form noValidate validated={validated} onSubmit={onSubmit_}>
-    
-
                 <Form.Group className="mb-3" controlId="myName">
                     <Form.Label>Name:</Form.Label>
-          <InputGroup hasValidation>
+            <InputGroup hasValidation>
         
                 <Form.Control
                     type="text"

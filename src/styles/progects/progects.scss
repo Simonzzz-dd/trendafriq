@@ -4,14 +4,28 @@
   width: 100%;
   min-height: 100vh;
   padding-bottom: 5rem;
-  background-image: linear-gradient(white, #fcfcfc 80%);
+  background-image: linear-gradient(hsl(0, 0%, 100%), hsl(0, 0%, 98%) 80%);
   border-top: solid #44546c30 1px;
+  animation-name: example;
+  animation-duration: 1.5s;
 }
+
+@keyframes example {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* The element to apply the animation to */
 
 .progects p {
   width: 100%;
   padding-top: 1rem;
-  color: #777777;
+  color: $custom3;
 
   font-size: 1rem;
 }
@@ -22,17 +36,16 @@
 }
 
 .progects img {
-  box-shadow: 2px 2px 10px #dddddd;
-
   min-height: 12rem;
-  opacity: 0.9;
+  opacity: 0.7;
   width: 100%;
-  background-color: $custom3;
+  background-color: $custom;
   height: 100%;
   max-height: 12rem;
+  object-position: center;
   object-fit: cover;
   border-radius: 0;
-  border: solid 2px $custom3;
+  border: solid 0 $custom;
 }
 
 .progects .card-text {
@@ -40,10 +53,12 @@
   max-height: 6rem;
   border: none;
   padding-bottom: 1rem;
-  border-bottom: double 4px #44546c1d;
+  // border-bottom: double 4px #44546c1d;
 }
 .progects .card {
   // background-color: #efefef84;
+  // box-shadow: 2px 2px 10px #eaeaea;
+  // border: solid 1px $custom;
   height: 100%;
   max-height: 100%;
   border-radius: 0;

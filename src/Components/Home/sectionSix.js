@@ -1,6 +1,7 @@
 import {  Container, Row, Col, Card } from 'react-bootstrap';
 import "../../styles/SectionSix.scss"
 import Ripple from 'material-ripple-effects';
+import { Link } from 'react-router-dom';
 
 
 const SectionSix = () => {
@@ -54,7 +55,7 @@ const SectionSix = () => {
             </Row>
 
 
-            <div className="moreProgects" onClick={rippleEF}> More Of Our Progects </div>
+            <Link className="a "  onClick={rippleEF} to="/Progects"> <div className="moreProgects">More Of Our Progects </div> </Link>
         </Container>
         </>
      );

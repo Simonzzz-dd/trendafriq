@@ -18,7 +18,7 @@ const Home = () => {
 
 
         const tl = gsap.timeline()
-        tl.from(".section2", { opacity: .6, transformOrigin:"center 1%", rotation:1 , yPercent: -5} )
+        tl.from(".section2", { opacity: .6, transformOrigin:"center 1%", rotation:1 , yPercent: -7} )
             .from(".section3", { xPercent: -100,})
             .from(".section4", { yPercent: 100, })
             .from(".section4", {})
@@ -30,7 +30,7 @@ const Home = () => {
             animation: tl,
             trigger: "#container-",
             start: "top top",
-            end: "+=8600",
+            end: "+=9600",
             scrub: true,
             pin: true,
             anticipatePin: 1

@@ -7,6 +7,9 @@
   border-top: solid #44546c30 1px;
 }
 .contactTheme {
+  opacity: 0.4;
+  animation-name: example;
+  animation-duration: 1.5s;
   height: 19rem;
   width: 100%;
   top: 0;
@@ -22,11 +25,13 @@
   padding-top: 6rem;
   //   background-color: black;
   min-height: 100vh;
+  animation-name: example;
+  animation-duration: 0.8s;
 }
 
 .contactContainer .R-- {
   //   margin: 0.5rem;
-  box-shadow: 2px 2px 10px #dddddd;
+  box-shadow: 1px 1px 1px #dddddd;
   //   border: solid #637b9f6b 1px;
   min-height: 19rem;
   background-color: #ffffff;

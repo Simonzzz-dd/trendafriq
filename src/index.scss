@@ -40,7 +40,7 @@ h4,
 h5 {
   font-family: "Prompt", sans-serif;
   // text-shadow: 2px 2px 5px #292929;
-  letter-spacing: 5px;
+  letter-spacing: 0px;
 }
 
 .customC {
@@ -51,6 +51,8 @@ h5 {
 .Home {
   width: 100%;
   overflow: hidden;
+  animation-name: example;
+  animation-duration: 1.6s;
 }
 
 .section1 {
@@ -58,6 +60,7 @@ h5 {
   background-color: $terciary;
   position: relative;
   width: 100vw;
+
   background-image: linear-gradient(#fcfcfc 80%, white);
 }
 
@@ -107,7 +110,7 @@ h5 {
 
 .section7 {
   min-height: 10rem;
-  background-color: $custom3;
+  background-color: #2c3646d2;
 }
 
 .h- {
@@ -127,7 +130,7 @@ h5 {
 }
 
 *::-webkit-scrollbar {
-  width: 0.8rem;
+  width: 0.7rem;
 }
 
 *::-webkit-scrollbar-track {
@@ -135,7 +138,7 @@ h5 {
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #777777;
+  background-color: #3a3a3a;
 }
 
 body {
@@ -144,4 +147,24 @@ body {
   // scroll-snap-type: mandatory;
   // scroll-snap-points-y: repeat(100vh);
   // scroll-snap-type: y mandatory;
+}
+
+.spiner_ {
+  margin: auto;
+  height: 85vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0;
+  width: 100%;
+}
+
+.absolute-pos {
+  top: 0;
+  left: 0;
+  position: absolute;
+  min-height: 100vh;
+  z-index: 1000000;
+  background-color: white;
 }
