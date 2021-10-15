@@ -15,12 +15,38 @@ const SectionSix = () => {
     const ImagesArray = {
         one: 
             [
-                { key: 1, img: "/Backs/image-439.jpg"},
-                {key: 2, img: "/Backs/image-390.jpg"},
-            {key: 7, img: "/Backs/image-406.jpg"},
-            { key: 4, img: "/Backs/image-342.jpg"},
-            {key: 5, img: "/Backs/image-406.jpg"},
-                            {key: 6, img: "/Backs/image-390.jpg"},
+                { 
+                    key: 1, img:"/images/Screenshot1.png",
+                    h: "110/33KV NAMIALO SUBSTATION - 2018",
+                    desc: "ERRECTION OF STEEL STUCTURES, ASSEMBLE ISOLATORS, CB’S VTS AND CT’S, ISTALL CONTROL AND POWER CABLES , CONTROL AND PROITECTION EQUIPMENT AND 33KV SWITCHGERAS".toLocaleLowerCase()},
+                {
+                    key: 2, img: "/images/Screenshot12.png",
+                    h: "NACALA – A - VELHA PORT",
+                    desc: "NACALA PORT E-HOUSE WITH MINIATURE SUBSTATIONS, TRANSFORMERS AND STACKER RE -CLAIMER COMPLETE INSTALLATIONOF A CONTENAINERIZED SUBSTATION (CIVILS, TRANSPORTAION AND POSITIONING ON FOUNDATION, WSWITCHGEARS, LIGHTING AND HAVAC SYSTEM".toLocaleLowerCase()
+                },
+                {
+                    key: 7, 
+                    img: "images/Screenshot20.png",
+                    h: "STRINGING",
+                    desc: "WE PERFORMED TOWER ERRECTION, DRESSING AND PULLING OF PILOT AND LINE STRINGING".toLocaleLowerCase()
+                },
+                { 
+                    key: 4, 
+                    img: "/images/Screenshot7.png",
+                    h: "40MVA, 110/33KV NAMIALO SUBSTATION – VACCUM AND OIL PURIFICATION - 2018",
+                    desc: "40MVA, 110/33KV NAMIALO SUBSTATION – VACCUM AND OIL PURIFICATION - 2018".toLocaleLowerCase()
+                },
+                {   key: 5,
+                    img: "/images/Screenshot14.png",
+                    h: "NACALA – A - VELHA PORT",
+                    desc: "NACALA COAL TERMINAL SHIP LOADER CONVEYORS INSTALLATION OF ALL CONTROL AND POWER CABLES, INCLUNDING INSTRUMENTAION SYSTEM".toLocaleLowerCase()
+                },
+                {
+                    key: 6, 
+                    img: "/images/Screenshot8.png",
+                    h: "INDUSTRIAL WATER LINE–CLN– NACALA – VELHA – 2016",
+                    desc: "WATER PUMP STATION FOR DUST SUPPRESSION OF COAL STOCK YARD SUPPLY AND INSTALL WATER CUNDUITS, MOTORS, PUMPS AND PROFIBUS".toLocaleLowerCase()        
+                },
 
             ],
         two:            
@@ -40,9 +66,8 @@ const SectionSix = () => {
                                     <Card>
                                         <Card.Body>
                                         <Card.Text>
-                                            <h5>Some quick example text to build on the </h5>
-                                            <p>to build on the card title and make up the bulk
-                                            of the card's content.</p>
+                                            <h5>{ ele.h } </h5>
+                                            <p>{ele.desc}</p>
                                         </Card.Text>
                                         </Card.Body>
                                         <Card.Img variant="bottom" src={`${ele.img}`}/>

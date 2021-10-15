@@ -1,8 +1,10 @@
-import {   Row, Col } from 'react-bootstrap';
+import {   Row, Col, } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import "../../styles/SectionTwo.scss"
 import Carrousel_ from './carrousel';
 import Ripple from 'material-ripple-effects';
 import { Link } from 'react-router-dom';
+import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
 
 const Section2 = () => {
 
@@ -36,7 +38,9 @@ const Section2 = () => {
                     </div>
                 </Col>
             </Row>
-
+            <div className="arrow">
+                <FontAwesomeIcon size="2x" style={{color: "#354254"}} icon={faArrowDown} />
+            </div>
         </div>
         </>
      );

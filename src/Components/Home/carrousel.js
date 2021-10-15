@@ -24,7 +24,7 @@ const Carrousel_ = () => {
                 <img
                     style={{minHeight: "20.1rem", maxHeight:"20.1rem"}}
                 className="d-block w-100"
-                src="/Backs/image-342.jpg"
+                src="/images/Screenshot13.png"
                 alt="Third slide"
                 />
             </Carousel.Item>
