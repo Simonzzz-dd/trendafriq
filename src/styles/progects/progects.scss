@@ -2,9 +2,12 @@
 
 .progects {
   width: 100%;
+  padding: 0 1rem;
   min-height: 100vh;
   padding-bottom: 5rem;
-  background-image: linear-gradient(hsl(0, 0%, 100%), hsl(0, 0%, 98%) 80%);
+  display: flex;
+  justify-content: center;
+  background-color: $custom;
   border-top: solid #44546c30 1px;
   animation-name: example;
   animation-duration: 1.5s;
@@ -27,26 +30,28 @@
   padding-top: 1rem;
   color: $custom3;
 
-  font-size: 1rem;
+  font-size: 0.65rem;
 }
 
 .progects .col {
-  min-height: 28.5rem;
-  height: 28.5em;
+  width: 160px;
+  min-height: 12.5rem;
+  height: 10.5em;
   padding: 0.5rem;
 }
 
 .progects img {
-  min-height: 12rem;
   opacity: 0.7;
   width: 100%;
   background-color: $custom;
   height: 100%;
-  max-height: 12rem;
+  min-height: 100px;
+  max-height: 100px;
   object-position: center;
   object-fit: cover;
-  border-radius: 0;
+
   border: solid 0 $custom;
+  border-bottom: solid 5px $custom3;
 }
 
 .progects .card-text {
@@ -58,16 +63,15 @@
 }
 .progects .card {
   // background-color: #efefef84;
-  // box-shadow: 2px 2px 10px #eaeaea;
-  // border: solid 1px $custom;
+  box-shadow: 2px 2px 10px $custom3;
+
   height: 100%;
   max-height: 100%;
-  border-radius: 0;
+
   border: 0;
 }
 
 .progects .description {
-  //   border-top: solid 2px $custom3;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -95,10 +99,10 @@
 
 .myModal {
   width: 100%;
-  min-width: 300px;
+
   min-height: 340px;
   max-height: 340px;
-  background-color: beige;
+  background-color: $custom;
   position: relative;
 }
 
@@ -108,4 +112,8 @@
   width: 100%;
   max-height: 340px;
   height: 100%;
+}
+
+.progectsRow {
+  justify-content: center;
 }

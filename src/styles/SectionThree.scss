@@ -16,88 +16,60 @@
 
 .section-3 h1 {
   width: 100%;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
 }
 
-.section4 .align-Center-,
-.section5 .align-Center- {
-  position: fixed;
+.fixedpos {
   left: 0;
-  top: 0;
 
-  height: 100vh;
   width: 100vw;
-}
-
-.section4 .card,
-.section5 .card {
-  // background-image: linear-gradient(#f7f7f7, white);
   height: 100%;
-  max-height: 27rem;
-  min-height: 27rem;
-  border-radius: 0;
-  max-width: 90%;
-  width: 38rem;
-  min-width: 300px;
-  color: black;
-
-  border: 0;
-}
-.s4Center {
-  padding-top: 2.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  position: absolute;
+  background-position: center;
+  background-size: cover;
 }
 
-@media (max-width: 1200px) {
-  .s4Center {
-    justify-content: center;
-  }
-  .section4 .container-4,
-  .section5 .container-4 {
-    display: none;
-  }
-
-  .section4 .card,
-  .section5 .card {
-    width: 100%;
-    min-width: 90%;
-  }
+.fixedpos.two {
+  background-position: 50% -150px;
 }
-.section4 .p-3,
-.section5 .p-3 {
-  display: none;
+.s4 {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 3rem 1rem;
+  background-color: $custom;
 }
 
-.section4 .card img,
-.section5 img {
-  border-radius: 0;
-  min-height: 20rem;
-  max-height: 20rem;
-  background-color: $custom3;
-  object-fit: cover;
-  border: 3px solid $custom3;
-  box-shadow: 1px 1px 10px #dddddd;
+.s4desc {
+  padding-left: 3rem;
+  position: relative;
+  z-index: 1;
 }
 
-.section4 h5,
-.section5 h5 {
-  color: $custom3;
-
-  margin-bottom: 1rem;
+.borderS4 {
+  top: 20px;
+  position: absolute;
+  height: 80%;
+  width: 10rem;
+  border: solid 3px #fba700;
 }
-.section4 h2,
-.section5 h2 {
-  -webkit-text-stroke: 2px $custom3;
 
-  opacity: 0.7;
-  font-size: 2.8rem;
-  max-width: 17rem;
-  max-height: 12rem;
-  color: $custom3;
+.fixedpos.two .s4 {
+  background-color: $custom;
+  color: $white;
+}
 
-  // border: double 4px #dddddd;
-  padding: 1rem;
-  // font-family: "Cormorant", serif;
+.s5desc {
+  padding-left: 3rem;
+  position: relative;
+  z-index: 1;
+}
+
+.borderS5 {
+  top: 20px;
+  position: absolute;
+  height: 80%;
+  width: 10rem;
+  border: solid 3px #fba700;
 }

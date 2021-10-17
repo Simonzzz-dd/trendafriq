@@ -39,184 +39,130 @@ element.style {
   z-index: 1020;
 }
 
-// grid ------------------------------------------------------------------------
-
-.intro- .col-sm {
+.SectionOneContainer {
   position: relative;
-  height: 25rem;
-  padding: 0;
+  text-align: center;
+  width: 100vw;
+  height: 90vh;
+  background-color: $custom;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.SectionOneContainer .s1img {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.s1Container {
+  position: relative;
+  z-index: 1000000;
+  height: 100%;
+}
+
+.center1 {
+  flex-direction: column;
+  display: flex;
   align-items: center;
   justify-content: center;
-  background-position: bottom;
+}
+.s1HomeDesc {
+  // background-color: #3542547e;
+  padding: 3rem 1rem;
+  text-shadow: 1px 1px 10px $custom3;
+  // border: solid $custom 1px;
+  margin: 1rem;
+}
+
+.s1HomeDesc .sp {
+  margin-bottom: -5px;
+  color: white;
+  letter-spacing: 1.2rem;
+  font-size: 0.9rem;
+}
+
+.s1btn {
+  padding: 0.5rem 2rem;
+  background-color: $custom;
+  color: white;
+  margin-bottom: -0.9rem;
+  border-radius: 8px;
+  // box-shadow: 2px 2px 10px $custom3;
+}
+
+.s1HomeDesc h2 {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.logoS1 {
+  position: absolute;
+  bottom: -3rem;
+  height: 6rem;
+  width: 8.5rem;
+  border-radius: 100%;
+  background-color: $custom;
+  z-index: 99;
+}
+
+.logo1 {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 100%;
+  background-color: #fefefe;
+  margin-top: 1rem;
+  background-position: center;
   background-size: cover;
 }
 
-.intro- {
-  animation-name: example;
-  animation-duration: 0.5s;
-  background-color: $custom3;
-  margin-top: 1px;
-  // border-top: 1px solid #dddddd;
-  position: relative;
-  // border-bottom: 1px solid $custom;
-}
-
-.intro- .carousel {
-  min-height: 25rem;
-  width: 100%;
-}
-
-.intro- .carousel img {
-  width: 100%;
-  min-height: 25rem;
-  object-fit: cover;
-  max-height: 25rem;
-}
-
-.intro- .carousel-inner {
-  width: 100%;
-  min-height: 25rem;
-}
-
-.intro- .carousel-indicators {
-  display: none;
-}
-
-// Home Page --------------------- Logo
-
-.homePage-- {
-  background-image: linear-gradient(#3a3a3a85, #7e7e7e5a, #1c1c1cc8);
-  position: absolute;
-  width: 110%;
-  min-width: 100vw;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 100;
-  flex-direction: column;
+.mission {
+  text-shadow: 1px 1px 5px $custom3;
+  padding-top: 6rem;
   color: white;
-}
-
-.homePage-- img {
-  object-fit: cover;
-  background-color: $white;
-  object-position: -2px -5px;
-  border-radius: 100%;
-  height: 4rem;
-  width: 4rem;
-  opacity: 0.5;
-}
-.homePageImg {
-  height: 4rem;
-  width: 4rem;
-}
-
-.since {
-  opacity: 0.7;
-  border-radius: 8px;
-  border: solid 1px #44546c77;
-  box-shadow: 0.5px 0.5px 10px $custom3;
-  padding: 1rem 1rem;
-  background-color: white;
-  display: flex;
-  opacity: 0;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  background-image: linear-gradient(white 80%, #f9f9f9);
-  transform: translateX(7px);
-}
-
-.homePage-- p {
-  color: $custom;
-  // font-family: "Prompt", sans-serif;
-  font-size: 0.7rem;
-  text-align: justify;
-  padding-top: 0.5rem;
-}
-
-@media (max-width: 768px) {
-  .tabletMax {
-    display: none;
-  }
-  .since {
-    display: none;
-  }
-}
-
-// Our Brand -----------------------
-
-.OurBrand .row {
-  // border: double #5a687e31 4px;
-  // box-shadow: 1px 1px 50px #f9f9f9c4;
-  // border-radius: 8px;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  // background-image: linear-gradient(white 80%, #f9f9f98c);
-}
-
-.OurBrand .col-md {
-  display: flex;
-  align-items: center;
-
   text-align: center;
-  padding: 1rem 1rem;
-  flex-direction: column;
-}
-
-.OurBrand {
   position: relative;
-  margin-top: 32px;
-  padding-bottom: 4.5rem;
+  top: -0.1rem;
+  width: 100%;
+  min-height: 25rem;
+  background-color: $custom;
 }
 
-.fStart {
-  text-align: start;
+.mission p {
+  padding: 1rem;
 }
 
-.OurBrand h5 {
-  padding: 0.5rem 1rem;
-  color: $custom;
-  font-size: 1rem;
-  letter-spacing: 0;
+.arrowdown {
+  margin-top: -1.5rem;
+  height: 17rem;
+  padding-bottom: 3rem;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-@media (min-width: 768px) {
-  .homePage-- {
-    min-width: 110vw;
-  }
-  .btn--nav {
-    display: none;
-  }
+.arrowdown img {
+  // animation-name: godown;
+  // animation-duration: 1000ms;
+  // animation-iteration-count: infinite;
+  // animation-direction: alternate-reverse;
+  // animation-timing-function: ease-out;
+  // position: absolute;
+  // bottom: 10px;
+  // opacity: 1;
 }
 
-@media (max-width: 576px) {
-  .homePage-- {
-    background-image: linear-gradient(#85858500, #00000000, #44546c00);
+@keyframes godown {
+  10% {
+    bottom: 10px;
   }
-
-  .intro- {
-    border-top: none;
-  }
-
-  .since {
-    transform: translateX(13px);
-    display: none;
-    opacity: 100%;
-    border: double 4px $custom3;
-  }
-
-  .OurBrand .row {
-    border: 0;
-  }
-
-  .intro- img {
-    opacity: 0.7;
-  }
-
-  .OurBrand .col-md {
-    text-align: justify;
+  100% {
+    bottom: 0;
   }
 }

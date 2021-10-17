@@ -8,10 +8,11 @@ const Section3 = () => {
         <>
 
             <div className="section-3">
+            <Container>
                 <h1 >
-                    PROBABLY MIGHT HAVE SOME DOUBTS OF HOW WE PERFORM,
-                    DOWN BELLOW, THERE IS A SHOWCASE OF SOME OF OUR PROGECTS
+                    SINCE TREND AFRIQ WAS ESTABLISHED, HAS BEEN INGAGED IN MANY PROGECTS, PLEASE SEE BELOW SOME OF OUR PROGECTS
                 </h1>
+            </Container>
             </div>
 
         </>

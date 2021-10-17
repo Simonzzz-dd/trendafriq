@@ -1,11 +1,25 @@
 import "../../styles/SectionOne.scss"
 import { Container, Row, Col, Carousel, Spinner } from 'react-bootstrap';
 import { useEffect, useState } from "react";
-// import { gsap } from "gsap";
-// import { ScrollTrigger } from "gsap/ScrollTrigger"
+import Ripple from 'material-ripple-effects';
+import { useHistory } from "react-router-dom"
+
+
+
+
+
+
 
 const Section1 = () => {
-        let [isLoading, setLoading ] = useState(true)
+
+
+    const history = useHistory()
+    let [isLoading, setLoading ] = useState(true)
+    const ripple = new Ripple();
+    function rippleEF ( e ) {
+        ripple.create(e, 'dark')
+        setTimeout(()=> history.push("/contactUs"), 500)
+    }
 
     useEffect(()=>{
         const myImage = new Image( 100, 100)
@@ -29,60 +43,45 @@ const Section1 = () => {
         ) : <> </>
         }
             <>
-                <div className="intro-">
-                    <Row>
-            
-                    <Col sm >
-                        <Carousel fade>
-                        <Carousel.Item>
-                            <img
-                            className="d-block w-100"
-                            src="/Backs/namialo.jpg"
-                            alt="Second slide"
-                            />
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <img
-                            className="d-block w-100"
-                            src="/Backs/pr2.jpg"
-                            alt="Third slide"
-                            />
-                        </Carousel.Item>
-                        </Carousel>
-                    </Col>
-                    <div className="homePage--">
-                        <div className="since"> 
-                            <div className="homePageImg">
-                                <img src="/trendLogo/trendLogo.png" alt="logo" />
-                            </div>
-                            {/* <p>&#9679; since 2009 &#9679;</p> */}
+                <div className="SectionOneContainer">
+                    <Container className="s1Container center1">
+                        <div className="s1HomeDesc center1">
+                            {/* <div className="sp">Trend-Afriq-Lda</div> */}
+                            <h2>POWER AND CONSTRUCTION COMPANY</h2>
+                            <div className="s1btn" onClick={(e)=>rippleEF(e)}>Contact Us</div>
                         </div>
-                    </div>            
-                    </Row>
+                    </Container>
+                    <div  className="s1img" style={{backgroundImage: "url("+"'/trendedited/trendaf.png')"}}>
+                            
+                    </div>        
+                    <div className="logoS1 center1">
+                        <div className="logo1" style={{backgroundImage: "url("+"'/trendLogo/trendlogo.png')"}}></div>
+                    </div>
                 </div>
-                <div className="OurBrand" >
+                <div className="mission">
                     <Container>
                         <Row>
-                            <Col md> <h5>OUR MISSION</h5>
-                                <p>Shape the future, understand design concepts, commit to achieving the goals of our clients, creating unprecedent value and oppurtunity for our employees, save the ecosystem .
-                                </p>
-                            </Col>
-                            <Col md style={{backgroundColor: "#1e242dd2",}} className="BD">
-                                <h5 style={{ color: "white"}}>OUR VISION</h5>
-                                <p style={{ color: "white"}}> 
-                                    At Trend Afriq , our vision is to be the country’s best company in the eyes of our customers, shareholders, communities and people. Deliver the best we can by
-                                    always keeping Trend Afriq’s values
-                                    top of mind.
+                            <Col md>
+                                <b>Mission</b><div className="b"></div>
+
+                                <p>
+                                    Shape the future, understand design concepts, commit to achieving the goals of our clients, creating unprecedent value and oppurtunity for our employees, save the ecosystem .
                                 </p>
                             </Col>
                             <Col md>
-                                <h5>OUR VALUES</h5>
-                                <div >
-                                    Respect for People’s Dignity, Empower Individuals, Commitment, Improvement,Leadership by Example,Dependability, Team Work.                           
-                                </div>
-
+                                <b>Vision</b><div className="b"></div>
+                                <p>At Trend Afriq , our vision is to be the country’s best company in the eyes of our customers, shareholders, communities and people. Deliver the best we can by always keeping Trend Afriq’s values top of mind.</p>
+                            </Col>
+                            <Col md>
+                                <b>Values</b><div className="b"></div>
+                                <p>
+                                    Respect for People’s Dignity, Empower Individuals, Commitment, Improvement,Leadership by Example,Dependability, Team Work.
+                                </p>
                             </Col>
                         </Row>
+                        <div className="arrowdown">
+                            <img src="/trendedited/line.svg" alt="" />
+                        </div>
                     </Container>
                 </div>
             </>

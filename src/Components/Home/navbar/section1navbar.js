@@ -13,7 +13,7 @@ const S1NavBar = () => {
         ripple.create(e, 'dark')
     }
     return ( 
-      <Navbar collapseOnSelect expand="lg" style={{border:"0"}}  variant="light">
+      <Navbar collapseOnSelect expand="lg" style={{border:"0", backgroundColor: "white"}}  variant="light">
         <Container>
         <Navbar.Brand  style={{color: "#44546cd2"}} onClick={rippleEF}>
           <Link className="prompt" to="/"> TRENDAFRIQ </Link> 
@@ -21,10 +21,11 @@ const S1NavBar = () => {
         <Navbar.Toggle onClick={rippleEF} aria-controls="responsive-navbar-nav" style={{border: "none"}} />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto" style={{margin: "0 auto"}} >
-            <Link className="a"  onClick={rippleEF} to="/Progects">Our Projects</Link>
+    
 
           </Nav>
           <Nav>
+            <Link className="a mr"  onClick={rippleEF} to="/Progects">Our Projects</Link>
             <Link className="a mr"  onClick={rippleEF} to="/about">About</Link>
             <Link className="a"  onClick={rippleEF} to="/contactUs"> Contact US</Link>
           </Nav>

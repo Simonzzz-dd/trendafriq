@@ -30,23 +30,6 @@ const SectionSix = () => {
                     h: "STRINGING",
                     desc: "WE PERFORMED TOWER ERRECTION, DRESSING AND PULLING OF PILOT AND LINE STRINGING".toLocaleLowerCase()
                 },
-                { 
-                    key: 4, 
-                    img: "/images/Screenshot7.png",
-                    h: "40MVA, 110/33KV NAMIALO SUBSTATION – VACCUM AND OIL PURIFICATION - 2018",
-                    desc: "40MVA, 110/33KV NAMIALO SUBSTATION – VACCUM AND OIL PURIFICATION - 2018".toLocaleLowerCase()
-                },
-                {   key: 5,
-                    img: "/images/Screenshot14.png",
-                    h: "NACALA – A - VELHA PORT",
-                    desc: "NACALA COAL TERMINAL SHIP LOADER CONVEYORS INSTALLATION OF ALL CONTROL AND POWER CABLES, INCLUNDING INSTRUMENTAION SYSTEM".toLocaleLowerCase()
-                },
-                {
-                    key: 6, 
-                    img: "/images/Screenshot8.png",
-                    h: "INDUSTRIAL WATER LINE–CLN– NACALA – VELHA – 2016",
-                    desc: "WATER PUMP STATION FOR DUST SUPPRESSION OF COAL STOCK YARD SUPPLY AND INSTALL WATER CUNDUITS, MOTORS, PUMPS AND PROFIBUS".toLocaleLowerCase()        
-                },
 
             ],
         two:            

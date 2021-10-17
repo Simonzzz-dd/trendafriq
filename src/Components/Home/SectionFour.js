@@ -6,24 +6,19 @@ const SectionFour = () => {
     return ( 
         <>
 
-            <div className="align-Center-">
-            <Container className="s4Center">
-                <div className="container-4">
-                    <h2>
-                        MOCUBA – 2018/2019
-                    </h2>                    
+            <div className="fixedpos" style={{backgroundImage: "url("+"'/trendedited/marupa.png')"}}>
+                <div className="s4" >
+                    <Container className="s4Center">
+                        <div className="contentS4">
+                        <div className="borderS5"></div>
+                        <div className="s5desc">
+                            <h5>CUAMBA-MARRUPA 2019</h5>
+                            <h5>REPARATIONS FOR STRINGING 110KV LINE CUAMBA</h5>
+                            <p>Dressing and stringing of 240km of 110kv line + earth wire + opgw</p>
+                        </div>
+                        </div>
+                    </Container>
                 </div>
-
-                      <Card>
-                        <Card.Img variant="top" src="/images/Screenshot11.png" />
-                        <Card.Body>
-                        <Card.Title> <h5>NACALA – A - VELHA PORT </h5></Card.Title>
-                            <Card.Text style={{ fontSize: ".8rem"}}>
-                                P{("LANT POLES AND STRING 22KV ABC CONDUCTOR FROM THE 110/22KV MAIN SUBSTATION 22/6.6/3.3KV SUBSTATION").toLocaleLowerCase()}
-                            </Card.Text>
-                        </Card.Body>
-                    </Card>
-            </Container>
             </div>
         </>
      );

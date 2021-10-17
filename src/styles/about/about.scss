@@ -1,9 +1,11 @@
 @import "../root";
 
 .about1 {
-  border-top: 1px solid #dddddd;
+  padding-top: 4rem;
+
+  background-color: $custom;
   min-height: 100vh;
-  padding-top: 1rem;
+
   animation-name: example;
   animation-duration: 1.5s;
   padding-bottom: 5rem;
@@ -27,11 +29,12 @@ img {
 }
 
 .about1 h5 {
-  color: $custom3;
+  color: $white;
   letter-spacing: 0px;
   font-size: 1rem;
 }
 
 .about1 p {
+  color: white;
   text-align: justify;
 }

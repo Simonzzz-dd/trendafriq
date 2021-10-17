@@ -18,6 +18,7 @@ const Footer = () => {
                 </Col>
         
             </Row>
+            <div className="poweredBy"> &copy; Copyright 2021 Zimmo</div>
             </Container>
         </div>
      );

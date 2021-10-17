@@ -1,10 +1,18 @@
 import "../styles/progects/progects.scss"
 import { Container,Row, Col, Card, Button, Modal } from "react-bootstrap";
 import { useState } from "react"
+import Ripple from 'material-ripple-effects';
 
 
 
 const Progects = () => {
+
+    const ripple = new Ripple();
+
+    function rippleEF ( e ) {
+        ripple.create(e, 'dark')
+    }
+
 
 
     const [show, setShow] = useState(false);
@@ -17,9 +25,10 @@ const Progects = () => {
     })
 
     const handleClose = () => setShow(false);
-    const handleShow = ( ele ) => { 
+    const handleShow = (e, ele ) => { 
         setShow(true)
         setContent(ele)
+        rippleEF(e)
     };
     const Images = [
                 {
@@ -28,12 +37,7 @@ const Progects = () => {
                     h: "SCO 20MVA SUBSTATION INSTALLATION OF 1250KVA POWER TRANSFORMER,SWITCHGERAS, CONTROL AND POWER CABLES INCLUDING FOR SCO MACHINE",
                     desc: "SCO 20MVA SUBSTATION INSTALLATION OF 1250KVA POWER TRANSFORMER,SWITCHGERAS, CONTROL AND POWER CABLES INCLUDING FOR SCO MACHINE".toLocaleLowerCase()
                 },
-                {
-                    key: 9, 
-                    img: "images/Screenshot18.png",
-                    h: "JINDAL MINE – TETE",
-                    desc: "INTERMEDIATE H-STRUCTURE 33KV DOUBLE CONDUCTOR PLANT POLES, DRESS AND STRINGING ".toLocaleLowerCase()
-                },
+
                 {
                     key: 3, 
                     img: "images/Screenshot18.png",
@@ -84,24 +88,24 @@ const Progects = () => {
         <div className="progects">
         <Container>
             <p style={{color: "#dddddd"}}>Progects Gallery</p>
-            <Row xs={1} md={2} lg={3}>
+            <Row className="progectsRow" xs={1} md={2} lg={3} >
             {
                 Images.map((ele, i) => {
                     return (
-                        <Col key={ele.key}> 
-                        <div className="relative">
-                            <Card >
-                                <Card.Img onClick={() => handleShow(ele)} variant="top" src={ele.img}/>
-                                <Card.Body>
-                                <Card.Text>
-                                    <b>{ele.h.toLocaleLowerCase()}</b>
-                                    <p>{ele.desc.toLowerCase()}</p>
-                                </Card.Text>
-                                </Card.Body>
-                                
-                            </Card>
-                        </div> 
-        </Col>)
+                        <Col key={ele.key }  onClick={(e) => handleShow(e,ele)}> 
+                            <div className="relative">
+                                <Card >
+                                    <Card.Img variant="top" src={ele.img}/>
+                                    <Card.Body>
+                                    <Card.Text>
+                                        <b>{ele.h.length > 35 ? ele.h.toLocaleLowerCase().slice(0,36) + "..." : ele.h.toLowerCase()}</b>
+                                        {/* <p>{ele.desc.toLowerCase()}</p> */}
+                                    </Card.Text>
+                                    </Card.Body>
+                                    
+                                </Card>
+                            </div> 
+                        </Col>)
                 })
             }
 
@@ -114,7 +118,7 @@ const Progects = () => {
     
 
         <Modal
-            size="lg"
+            size="md"
             aria-labelledby="contained-modal-title-vcenter"
             centered            
             show={show}
@@ -123,9 +127,10 @@ const Progects = () => {
             keyboard={false}
         >
             <Modal.Header closeButton>
-            <Modal.Title>{content.h.slice(0,25)+ "..." }</Modal.Title>
+            <Modal.Title> Trend Afriq</Modal.Title>
             </Modal.Header>
             <Modal.Body>
+            <b>{content.h}</b> <br/>
                 {content.desc}
             </Modal.Body>
             <Modal.Footer>

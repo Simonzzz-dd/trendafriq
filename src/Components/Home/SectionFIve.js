@@ -6,26 +6,19 @@ import "../../styles/SectionThree.scss"
 const SectionFive = () => {
     return ( 
         <>
-
-            <div className="align-Center-">
-                <Container className="s4Center">
-                    <div className="container-4">
-                        <h2>
-                            MARRUPA  2019
-                        </h2>                    
-                    </div>
-    
-                        <Card>
-                            <Card.Img variant="top" src="/Backs/Marupa.jpg" />
-                            <Card.Body>
-                            <Card.Title> <h5>REPARATIONS FOR STRINGING 110KV LINE CUAMBA </h5></Card.Title>
-                                <Card.Text style={{ fontSize: ".8rem"}}>
-                                    D{("RESSING AND STRINGING OF 240KM OF 110KV LINE + EARTH WIRE + OPGW").toLocaleLowerCase()}
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-
-                </Container>
+            <div className="fixedpos two" style={{backgroundImage: "url("+"'/trendedited/velhaport.png')"}}>
+                <div className="s4" >
+                    <Container className="s4Center">
+                        <div className="contentS4">
+                        <div className="borderS4"></div>
+                        <div className="s4desc">
+                            <h5>NACALA – 2014/2015</h5>
+                            <h5>NACALA – A - VELHA PORT </h5>
+                            <p>Plant poles and string 22kv abc conductor from the 110/22kv main substation 22/6.6/3.3kv substation</p>
+                        </div>
+                        </div>
+                    </Container>
+                </div>
             </div>
     
         </>
